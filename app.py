@@ -33,14 +33,14 @@ def draw_style():
         page_icon='📚'
     )
 
-    style = """
+    st.markdown(
+        '''
         <style>
             header {visibility: visible;}
             footer {visibility: hidden;}
         </style>
-    """
-
-    st.markdown(style, unsafe_allow_html=True)
+        '''
+        , unsafe_allow_html=True)
 
 
 def load_page():
