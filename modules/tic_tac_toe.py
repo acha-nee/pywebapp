@@ -61,8 +61,8 @@ def check_win(board):
 def computer_player():
     moves = check_available_moves(extra=True)
     if moves:
-        computer_move = random.choice(moves)
-        handle_click(computer_move[0], computer_move[1])
+        i, j = random.choice(moves)
+        handle_click(i, j)
 
 
 def handle_click(i, j):
